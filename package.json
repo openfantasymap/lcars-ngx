@@ -36,5 +36,13 @@
   "engines": {
     "node": ">=18.19"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openfantasymap/lcars-ngx.git"
+  },
+  "homepage": "https://github.com/openfantasymap/lcars-ngx#readme",
+  "bugs": {
+    "url": "https://github.com/openfantasymap/lcars-ngx/issues"
+  }
 }

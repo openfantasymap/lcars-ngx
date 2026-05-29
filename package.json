@@ -1,0 +1,40 @@
+{
+  "name": "@openfantasymap/lcars-ngx",
+  "version": "0.1.0",
+  "description": "Angular (standalone + signals) components for the LCARS design system, wrapping @openfantasymap/lcars-core.",
+  "license": "MIT",
+  "scripts": {
+    "build": "ng-packagr -p ng-package.json"
+  },
+  "keywords": [
+    "lcars",
+    "star-trek",
+    "angular",
+    "signals",
+    "components",
+    "ui"
+  ],
+  "peerDependencies": {
+    "@angular/common": ">=17.0.0",
+    "@angular/core": ">=17.0.0",
+    "@openfantasymap/lcars-core": ">=0.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.6.0"
+  },
+  "devDependencies": {
+    "@angular/common": "^20.0.0",
+    "@angular/compiler": "^20.0.0",
+    "@angular/compiler-cli": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@openfantasymap/lcars-core": ">=0.1.0",
+    "ng-packagr": "^20.0.0",
+    "rxjs": "^7.8.0",
+    "typescript": "~5.8.0",
+    "zone.js": "^0.15.0"
+  },
+  "engines": {
+    "node": ">=18.19"
+  },
+  "sideEffects": false
+}

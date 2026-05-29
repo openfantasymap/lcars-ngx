@@ -1,6 +1,6 @@
 {
   "name": "@openfantasymap/lcars-ngx",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Angular (standalone + signals) components for the LCARS design system, wrapping @openfantasymap/lcars-core.",
   "license": "MIT",
   "scripts": {

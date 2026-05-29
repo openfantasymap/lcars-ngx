@@ -17,7 +17,11 @@ export * from './lib/components/engineering';
 export * from './lib/components/comms';
 export * from './lib/components/transporter';
 export * from './lib/components/layout';
+export * from './lib/components/dpad';
 export { LcarsOverviewComponent } from './lib/components/overview.component';
+
+// Config-driven screen renderer (registry kernel) + its types.
+export * from './lib/render';
 
 import { LcarsBindDirective } from './lib/bind.directive';
 import {
@@ -52,6 +56,8 @@ import {
   LcarsAppSidebarDirective, LcarsAppHeaderDirective, LcarsAppContentDirective, LcarsSpacerComponent, LcarsGrowComponent,
 } from './lib/components/layout';
 import { LcarsOverviewComponent } from './lib/components/overview.component';
+import { LcarsDpadComponent } from './lib/components/dpad';
+import { LcarsRenderComponent, LcarsWidgetOutletDirective } from './lib/render';
 
 /** Every standalone component/directive — spread into a component's `imports`. */
 export const LCARS = [
@@ -72,4 +78,6 @@ export const LCARS = [
   LcarsRootDirective, LcarsRowComponent, LcarsColumnComponent, LcarsPanelComponent, LcarsAppComponent,
   LcarsAppSidebarDirective, LcarsAppHeaderDirective, LcarsAppContentDirective, LcarsSpacerComponent, LcarsGrowComponent,
   LcarsOverviewComponent,
+  LcarsDpadComponent,
+  LcarsRenderComponent, LcarsWidgetOutletDirective,
 ] as const;

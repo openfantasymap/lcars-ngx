@@ -1,0 +1,25 @@
+# Build & checks on every push to main and on PRs (Node 20 for Angular).
+# Builds against core from its GitHub repo so CI is green even before core is on npm.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Use core from GitHub
+        run: npm pkg set 'devDependencies.@openfantasymap/lcars-core=github:openfantasymap/lcars-core'
+      - run: npm install --no-audit --no-fund
+      - run: npm run build
+      - run: test -d dist

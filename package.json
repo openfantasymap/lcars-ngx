@@ -4,7 +4,9 @@
   "description": "Angular (standalone + signals) components for the LCARS design system, wrapping @openfantasymap/lcars-core.",
   "license": "MIT",
   "scripts": {
-    "build": "ng-packagr -p ng-package.json"
+    "build": "ng-packagr -p ng-package.json",
+    "storybook": "ng run lcars-ngx:storybook",
+    "build-storybook": "ng run lcars-ngx:build-storybook"
   },
   "keywords": [
     "lcars",
@@ -23,13 +25,20 @@
     "tslib": "^2.6.0"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^20.0.0",
+    "@angular/cli": "^20.0.0",
     "@angular/common": "^20.0.0",
     "@angular/compiler": "^20.0.0",
     "@angular/compiler-cli": "^20.0.0",
     "@angular/core": "^20.0.0",
+    "@angular/platform-browser": "^20.0.0",
+    "@angular/platform-browser-dynamic": "^20.0.0",
     "@openfantasymap/lcars-core": ">=0.1.0",
+    "@storybook/addon-mcp": "^0.5.0",
+    "@storybook/angular": "^9.1.15",
     "ng-packagr": "^20.0.0",
     "rxjs": "^7.8.0",
+    "storybook": "^9.1.15",
     "typescript": "~5.8.0",
     "zone.js": "^0.15.0"
   },

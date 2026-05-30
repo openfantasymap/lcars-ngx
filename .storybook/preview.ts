@@ -1,6 +1,7 @@
 import type { Preview } from '@storybook/angular';
 import { componentWrapperDecorator } from '@storybook/angular';
-import '@openfantasymap/lcars-core/css';
+// Core CSS is loaded via angular.json `styles` (the Angular/webpack builder
+// can't parse a .css through a JS import the way Vite does).
 
 export const globalTypes = {
   theme: {
